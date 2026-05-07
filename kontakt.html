@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Autoservis Filipović</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/logo2.png" alt="Logo">
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">☰</label>
+        <ul>
+            <li><a href="index.html">Početna</a></li>
+            <li><a href="usluge.html">Usluge</a></li>
+            <li><a class="active" href="kontakt.html">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <h1>Kontaktirajte Nas</h1>
+        <p>Pošaljite nam poruku i odgovorićemo u najkraćem roku</p>
+    </header>
+
+    <main>
+        <section class="container-form">
+            <div class="kontakt-sekcija">
+                <h2>Online Upit</h2>
+                <form id="contactForm">
+                    <div class="input-group">
+                        <label for="ime">Ime i prezime</label>
+                        <input type="text" id="ime" placeholder="Vaše ime" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Email adresa</label>
+                        <input type="email" id="email" placeholder="vas@email.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="poruka">Vaša poruka</label>
+                        <textarea id="poruka" rows="6" placeholder="Opišite kvar ili uslugu koja Vam je potrebna..." required></textarea>
+                    </div>
+                    <button type="submit" class="posalji">Pošalji poruku</button>
+                </form>
+                <div id="formStatus"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Autoservis Filipović. Sva prava zadržana.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
